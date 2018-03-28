@@ -1,0 +1,56 @@
+/* ------------ section-1 --------------- */
+.section-1 {
+   background-image: url("../img/main.png");
+   background-size: cover;
+}
+
+.general-page {
+  padding-top: 200px;
+  padding-bottom: 145px;
+  &__text {
+    &_topic{
+      @extend %for-h1;
+      padding-bottom: 35px;
+    }
+    &_main {
+      @extend %for-p;
+      font:{
+        family: 'OpenSans-Regular';
+        size: 20px;
+      }
+      color: $white;
+      padding-bottom: 60px; 
+    }
+    &_btns {
+      font:{
+        family: 'NexaLight';
+        size: 14px;
+        weight: $bold;
+      }
+      text-transform: uppercase;
+      color: $white;
+      background-color: $background-opacity;
+      border: 2px solid $white;    
+      padding: 14px 22px;
+      border-radius: 3px;
+      @extend %for-a;
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.forms {
+  padding-bottom: 26px;
+}
+
+.clicks {
+  @extend %for-a;
+  text-decoration: underline;
+  color: $white;
+}
+
+
+  

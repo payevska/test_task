@@ -1,0 +1,157 @@
+/* ------------ section-4 --------------- */
+.section-4 {
+  padding-top: 100px;
+  margin-bottom: 310px;
+}
+.technology__promotion {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  &_subtitle-choice {
+    @extend %for-subtitle;
+    padding-top: 30px;
+    padding-bottom: 30px;    
+  }
+  &_topic-choice {
+    @extend %for-topic;
+    padding-bottom: 40px;    
+  }
+  &_info-text-choice {
+    @extend %for-info-text; 
+    padding-bottom: 60px;   
+  }
+}
+
+.list-tech {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  @media (min-width: 992px) and (max-width: 1070px) {
+    justify-content: start;
+  }
+  &__product {
+    display: flex;
+    &:hover{
+      .visitka {
+        display: block;
+        @extend %for-a;
+        color: $black;
+        a:hover {
+          color: $blue-dark;
+        }
+      }    
+    }      
+    &_forma {
+      @extend %for-buttons;
+       font:{
+         family: 'GothamProMedium';
+         size: 15px;
+         weight: $medium;
+       }
+       text-transform: none;
+       background: $white;
+       padding: 25px 40px;
+       box-shadow: 0px 15px 35px 0px rgba(163, 174, 186, 0.2);
+       @extend %for-a;
+       color: $black;
+       &:hover {
+          color: $white;
+          background: $activ-botton;
+          text-decoration: none;  
+       }
+     }
+  }
+}
+
+
+.visitka {
+  display: none;
+  @extend %for-ul; 
+  position: absolute;
+  top: 73px;
+  padding-left: 0;
+  text-align: center;
+  font:{
+         family: 'GothamProMedium';
+         size: 15px;
+         weight: $medium;
+       }
+  a:hover {
+    display: block;
+    color: $black;
+    text-decoration: none;
+      }
+  &__work {
+    display: block;
+    width: 190px;
+    text-align: center;
+    background: none;
+    border: none;
+    &_link {
+      display: block;
+      padding: 10px;
+      @extend %for-a;
+      color: $grey-light;
+      text-decoration: none;
+    }
+  }
+}
+
+/* ------ media query ------ */
+@include desktop {
+  .visitka {  
+    &__work {    
+      width: 150px;
+      &_link {      
+        padding: 10px;      
+      }
+    }
+  }  
+}
+
+@include laptop {
+  .list-tech {      
+    &__product {
+      margin-left: 5px;
+      margin-right: 5px;
+      .visitka {
+        &__work {
+          width: 157px;
+        }
+      }  
+      &_forma {      
+         padding: 25px 36px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .list-tech {
+    flex-direction: column;
+    &__product {
+      padding-bottom: 20px;
+    }
+  }    
+  .visitka {
+    top: 0;
+    left: 150px;
+  }    
+}
+
+@include phone {
+  
+}
+
+@include iphone {
+}
+
+@include mobile {  
+ 
+}
+

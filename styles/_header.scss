@@ -1,0 +1,95 @@
+.header-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header {
+  background-color: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 6;
+  top: 0;
+}
+
+.nav__menu {
+  @extend %for-ul;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: {
+    family: 'NexaBold';
+    size: 13px;
+  }
+  text-transform: uppercase;
+  color: $white;
+  line-height: 15px;
+  padding-left: 95px;
+}
+
+
+
+.nav__menu_menu-li {
+  display: flex;    
+    @extend %for-a;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    
+    
+}
+
+.buttons {
+  @extend %for-buttons;
+  &__menu-btn {    
+    display: flex;
+    justify-content: space-between;
+    @extend %for-a;  
+    color: $white;
+    
+    &_menu-icons {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      background-color: $red-coral;
+      border-radius: 50%;
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      font: {
+        family: 'NexaBold';
+        size: 13px;
+      }
+
+    }
+  }
+}
+
+
+/* ------ media query ------ */
+@include laptop {
+  
+}
+
+@include tablet {
+  
+}
+
+@include phone {
+  
+}
+
+@include iphone {
+  
+}
+
+@include mobile {
+  
+}
+
