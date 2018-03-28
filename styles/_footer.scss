@@ -1,81 +1,25 @@
 
 .footer{
-  background-color: $blue-fon;
-  font-size: 25px;
+  
 } 
 
-.lower {
-  &__webs {
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 80px;
-      margin-bottom: 40px;
-    &_icon-link{
-      padding-right: 5px;
-      padding-left: 5px;
-      color: $white;
-    }  
-  }
-  &__text-rows {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 45px;
-    &_text-link {
-      @extend %for-p;
-      font: {
-        family: 'GothamProMedium';
-        size: 14px;
-      }
-      color: white;
-      padding-left: 20px;
-      padding-right: 20px;
-      @media (max-width: 768px){
-        padding-left: 0;
-        padding-right: 0;
-      }
-      @media (max-width: 768px){
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      @media (max-width: 414px){
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      &:hover {
-        text-decoration: none;
-      }
-    }    
-  }
-  &__copies {
-    padding-bottom: 70px;
-    &_copy-text {
-      font: {
-        family: 'FjallaOneRegular';
-        size: 14px;
-      }
-      color: $grey-dark;
-    }
-    &_copy-line {
-      margin: 0 auto;
-      width: 60px;
-      height: 2px;
-      background-color: $grey-dark;      
-    }
-  }
+/* ------ media query ------ */
+@include laptop {
+  
 }
 
-.fab {
-  vertical-align: center;
+@include tablet {
+  
 }
 
-.circle {
-  display: table-cell;
-  vertical-align: middle;
-  width: 46px;
-  height: 46px;
-  -webkit-border-radius: 23px;
-  -moz-border-radius: 23px;
-  border-radius: 23px;
-  background-color: $grey-dark;
+@include phone {
+  
+}
+
+@include iphone {
+  
+}
+
+@include mobile {
+  
 }

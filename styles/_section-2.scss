@@ -1,303 +1,66 @@
 /* ------------ section-2 --------------- */
 .section-2 {
-  background-image: url("../img/fon-section-2.2.png");
-  background-size: cover;
-}
-.page-one__container {
-  margin: 0 auto;
-  padding-top: 102px;
-}
-.container__company-visiter {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 205px;
-  @media (min-width: 992px) {
-    display: flex;
-  } 
-} 
-
-.text-page{
-  display: flex;
-  flex-direction: column;
-  padding-right: 80px;
-  padding-left: 0;
-  &__subtitle {
-    @extend %for-subtitle;    
-  }
-  &__topic {
-    @extend %for-topic;    
-  }
-  &__info-text {
-    @extend %for-info-text;    
-  }
-  &__more-info {
-    @extend %for-more-info;
-    padding-top: 90px; 
-    padding-bottom: 60px;   
-  }
-}
-
-
-.office__foto-bottom {   
-  position: absolute;
-  right: 0;
-  top: 0;
-  top: 245px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}  
-.office__foto-top {  
-  position: absolute;
-  z-index: 1;  
-  top: 0;
-  right: 96px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.office__summation {
-  display: flex;  
-  position: absolute;
-  z-index: 2;
-  left: -18px;  
-  bottom: -45px; 
-  @media (max-width: 1199.98px) {
-    left: -29px;
-    bottom: 200px;
-  }      
-  &_team {
-    @media (max-width: 440px) {
-      padding: 10px 4px 10px 4px;
-    }
-    @media (min-width: 441px) and (max-width: 575.98px) {
-      padding: 17px 7px 17px 7px;
-    }
-    background-color: $white;
-    margin-right: 10px;
-    padding: 30px 7px 20px 7px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    &_block-number {
-      @media (max-width: 440px) {
-        font-size: 34px;
-        line-height: 36px;
-      }
-      @extend %for-h2;
-      font: {
-        size: 55px;
-        family: 'GothamProMedium';
-      }
-      letter-spacing: 0;
-      line-height: 55px;
-    }
-    &_block-text {
-      @extend %for-p;
-      font-size: 13px;
-      line-height: 15px;
-    }
-  }
-}
-
-/* ------------ media query --------------- */
-@include desktop {
   
-}  
+}
 
-@include laptop {
-  .page-one__container {
-    padding-top: 80px;
-  }
-  .container__company-visiter {
-    padding-bottom: 120px;
-  }
-  .text-page{
-    padding-right: 50px;
-    &__topic {
-      font-size: 32px;   
+.hotels {
+	padding-top: 60px;
+    padding-bottom: 0;
+    &__names {
+    	display: flex;
+    	&_visits {
+            overflow: hidden;
+            height: 180px;
+    	}
     }
-  }
-  .office__foto-bottom {
-    top: 330px;
-  }
-  .office__foto-top {
-    right: 0;
-  }  
-}      
+}
+
+    
+
+.text-topic {
+	@extend %for-h3;
+	padding-bottom: 57px;
+}
+
+.three {
+    margin-top: -140px;
+}
+
+.types {
+	@extend %for-p;
+	font-size: 18px;
+	color: $blue-clear;
+}
+
+.places {
+	@extend %for-p;
+	font-size: 15px;
+	color: $black;
+}
+
+.lich {
+	@extend %for-p;
+	font-size: 11px;
+	color: $grey;
+}
+
+/* ------ media query ------ */
+@include laptop {
+  
+}
 
 @include tablet {
-  .page-one__container {
-    padding-top: 10px;
-  }
-  .container__company-visiter {
-    padding-bottom: 355px;
-  }
-  .text-page{
-    &__topic {
-      padding-bottom: 20px;   
-    }  
-    &__more-info {      
-      padding-top: 25px;
-      padding-bottom: 25px;
-      padding-left: 150px;    
-    }
-  }
-
-  .office__foto-bottom {
-    position: absolute;
-    z-index: -2;
-    padding-top: 0;
-    top: 245px;
-    left: 96px;
-  }
-  .office__foto-top {
-    position: relative;
-    left: 0;
-  }
-  .office__summation {
-    position: absolute;
-    z-index: 1;
-    bottom: -325px;
-    left: 0;
-  }
+  
 }
 
 @include phone {
-  .page-one__container {
-    padding-top: 10px;
-  }
-  .text-page{
-    padding-left: 45px;
-    padding-right: 45px;
-    text-align: center;
-    &__subtitle {
-      padding-top: 15px;
-      padding-bottom: 15px;    
-    }
-    &__topic {
-      font-size: 26px;
-      line-height: 38px;
-      padding-right: 50px;
-      padding-left: 50px;
-      padding-bottom: 20px;   
-    }  
-    &__more-info {      
-      padding-top: 25px;
-      padding-bottom: 25px;    
-    }
-  }
-  .office {
-    text-align: center;
-  }
-  .office__foto-bottom {
-    padding-top: 45px;
-    position: relative;
-  }
-  .office__foto-top {
-    position: relative;
-    left: 0;
-  }
-  .office__summation {
-    position: absolute;
-    bottom: 286px;
-    left: 80px;
-  }  
+  
 }
 
 @include iphone {
-.page-one__container {
-    padding-top: 0;
-  }
-  .container__company-visiter {
-    padding-bottom: 0;
-  }
-  .text-page{
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    &__subtitle {
-      padding-top: 15px;
-      padding-bottom: 10px;    
-    }
-    &__topic {
-      font-size: 19px;
-      line-height: 26px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      padding-right: 13px;
-      padding-left: 13px;
-      padding-bottom: 10px;   
-    }
-    &__info-text {
-      font-size: 14px;
-      line-height: 20px;
-    }  
-    &__more-info {
-      font-size: 12px;      
-      padding-top: 12px;
-      padding-bottom: 25px;    
-    }
-  }
-  .office {
-    text-align: center;
-    padding: 0;
-  }
-  .office__foto-bottom {
-    display: none;
-  }
-  .office__foto-top {
-    display: none;
-  }
-  .office__summation {
-    position: static;
-    bottom: 25px;
-  }  
+  
 }
 
-
 @include mobile {
-  .page-one__container {
-    padding-top: 0;
-  }
-  .container__company-visiter {
-    padding-bottom: 0;
-    padding-right: 15px;
-  }
-  .text-page{
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-    &__subtitle {
-      font-size: 10px;
-      padding-top: 15px;
-      padding-bottom: 10px;    
-    }
-    &__topic {
-      font-size: 19px;
-      line-height: 26px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      padding-right: 13px;
-      padding-left: 13px;
-      padding-bottom: 10px;   
-    }
-    &__info-text {
-      font-size: 14px;
-      line-height: 20px;
-    }  
-    &__more-info {
-      font-size: 12px;      
-      padding-top: 12px;
-      padding-bottom: 12px;    
-    }
-  }
-  .office {
-    text-align: center;
-    padding: 0;
-  }
-  .office__foto-bottom {
-    display: none;
-  }
-  .office__foto-top {
-    display: none;
-  }
-  .office__summation {
-    display: none;
-  }
+  
 }
