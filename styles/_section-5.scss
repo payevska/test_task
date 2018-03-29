@@ -1,0 +1,47 @@
+/* ------------ section-5 --------------- */
+.section-5 {  
+    background-color: $blue-clear;
+}
+
+.carousel {
+	padding-top: 80px;
+	&_boks {
+	    &_tops {
+		    @extend %for-h3;
+		    text-transform: uppercase;
+		    padding-bottom: 75px;
+		    line-height: 33px;
+		    color: $white;
+	    }
+	    &_comment {
+		    display: flex;
+	    }
+	}    
+}
+
+
+.text-about {
+	@extend %for-p;
+	color: $white;
+}
+
+/* ------ media query ------ */
+@include laptop {
+  
+}
+
+@include tablet {
+  
+}
+
+@include phone {
+  
+}
+
+@include iphone {
+  
+}
+
+@include mobile {
+  
+}

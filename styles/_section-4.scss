@@ -3,6 +3,49 @@
   
 }
 
+.toddler {
+	&__dash {    
+        &_format {
+    	    display: flex;
+            justify-content: space-around;
+            padding-bottom: 32px;
+            &_units {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.toddler__dash_station {
+	width: 83%;
+    margin: 0 auto;
+	&_st {
+		position: relative;
+	    border-bottom: 2px solid $grey-light;
+	    padding-top: 48px;	
+	    line-height: 4px;
+	}    
+	&_point {
+		position: absolute;
+        z-index: 3;    
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        bottom: -3px;
+	    background-color: $blue-clear;	   
+    }
+}
+
+.nr {
+	@extend %for-h3;
+	text-transform: uppercase;
+	padding-top: 25px;
+}
+
+.tm {
+	@extend %for-p;
+	color: $grey;
+}
 
 /* ------ media query ------ */
 @include laptop {

@@ -4,7 +4,7 @@ html, body {
 
 
 .container {  
- 
+  
 }
 
 .row {
@@ -68,8 +68,7 @@ html, body {
 	    weight: $bold;
     }
     text-transform: uppercase;
-    line-height: 45px;
-    letter-spacing: 6px;
+    line-height: 45px;    
     margin-bottom: 0;
     margin-top: 0;
     color: $white;
@@ -89,7 +88,7 @@ html, body {
 
 %for-buttons {
 	font:{
-      family: 'NexaBold';
+        family: 'NexaBold';
 	    size: 13px;
 	}
   text-transform: uppercase;

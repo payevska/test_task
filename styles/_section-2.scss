@@ -1,21 +1,46 @@
 /* ------------ section-2 --------------- */
 .section-2 {
-  
+  background-color: $grey-light;
 }
 
+
+
+
+
 .hotels {
+  padding-left: 0;
+  padding-right: 0;
 	padding-top: 60px;
-    padding-bottom: 0;
-    &__names {
-    	display: flex;
-    	&_visits {
-            overflow: hidden;
-            height: 180px;
-    	}
+  padding-bottom: 60px;
+  &__names {
+    display: flex;
+    &_visits {
+      position: relative;
+      overflow: hidden;      
+      padding-right: 12px;
+      padding-left: 12px;
+      &_second {
+        overflow: hidden;
+        height: 180px;
+        
+      }  
+      &_ic {
+        position: absolute;
+        z-index: 2;
+        top: 150px;
+      }
+      &_titles {
+        background-color: $white;
+        padding-bottom: 35px;     
+      }      
     }
+  }
 }
 
     
+.up {
+  height: 180px;
+}
 
 .text-topic {
 	@extend %for-h3;
@@ -28,13 +53,14 @@
 
 .types {
 	@extend %for-p;
-	font-size: 18px;
+	font-size: 16px;
 	color: $blue-clear;
+  padding-top: 50px;
 }
 
 .places {
 	@extend %for-p;
-	font-size: 15px;
+	font-size: 13px;
 	color: $black;
 }
 
@@ -42,6 +68,37 @@
 	@extend %for-p;
 	font-size: 11px;
 	color: $grey;
+  padding-bottom: 18px;
+}
+
+.lines {
+  border-bottom: 1px solid $grey;   
+}
+
+.kg {
+  @extend %for-h3;
+  font: {
+    family: 'OpenSans-Bold';
+    size: 20px;
+  } 
+  line-height: 22px;
+  padding-top: 18px;
+}
+
+.tim {
+  @extend %for-p;
+  font-size: 11px;
+  color: $grey;
+  padding-bottom: 28px;
+}
+
+.mini-btn {
+  @extend %for-buttons;
+  padding: 8px 24px;
+  font:{
+    family: 'OpenSans-Regular';
+    size: 11px;
+  }
 }
 
 /* ------ media query ------ */
