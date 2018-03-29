@@ -5,7 +5,7 @@
 
 .carousel {
 	padding-top: 80px;
-	&_boks {
+	&__boks{	
 	    &_tops {
 		    @extend %for-h3;
 		    text-transform: uppercase;
