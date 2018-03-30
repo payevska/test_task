@@ -15,14 +15,113 @@
 	    }
 	    &_comment {
 		    display: flex;
+		    display: flex;
+            justify-content: space-between;
+		    &_info {		    	
+		    	display: flex;
+                justify-content: space-between;
+                    padding-bottom: 100px;
+		    }
 	    }
 	}    
 }
 
+.performance {
+    width: 27%;
+}
+
+
 
 .text-about {
-	@extend %for-p;
+	@extend %for-p;	
+	font: {
+		family: 'OpenSans-Light';
+		size: 18px;
+	}
 	color: $white;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.toggle-left {
+	position: relative;
+    z-index: 1;
+    top: 105px;
+    left: -80px;
+	&__up-line {
+	    width: 45px;
+	    height: 3px;
+	    position: absolute;
+        z-index: 2;
+        background-color: $white;
+        transform: rotate(130deg);
+    }
+    &__down-line {
+	    width: 45px;
+	    height: 3px;
+	    position: absolute;
+        z-index: 3;
+        bottom: 105px;
+        background-color: $white;
+        transform: rotate(-130deg);
+    }
+}
+
+.toggle-right {
+	position: relative;
+    z-index: 1;
+    top: 105px;
+    right: -43px;
+	&__up-line {
+	    width: 45px;
+	    height: 3px;
+	    position: absolute;
+        z-index: 2;
+        background-color: $white;
+        transform: rotate(50deg);
+    }
+    &__down-line {
+	    width: 45px;
+	    height: 3px;
+	    position: absolute;
+        z-index: 3;
+        bottom: 105px;
+        background-color: $white;
+        transform: rotate(-50deg);
+    }
+}
+
+.band {
+	width: 270px;
+	&__horiz {
+        width: 270px;
+	    height: 2px;
+	    background-color: $white;
+	}
+	&__comp {
+		display: flex;
+        justify-content: space-between;
+	&_vert-left {
+		width: 2px;
+	    height: 10px;
+	    background-color: $white;	   
+	    text-align: left;
+	    margin-top: -10px;
+	}
+	&_vert-right {
+		width: 2px;
+	    height: 10px;
+	    background-color: $white;	    
+	    text-align: right;
+	    margin-top: -10px;
+	}
+	&_vert-center {
+		width: 2px;
+	    height: 20px;
+	    background-color: $white;	    
+	    text-align: center;
+	}
+	}
 }
 
 /* ------ media query ------ */
