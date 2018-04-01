@@ -82,7 +82,7 @@ html, body {
   color: #FFFFFF;
   text-decoration: none; }
 
-.general-page__text_main, .types, .places, .lich, .tim, .text-pr, .tm, .text-about, .text-names, .text-dates {
+.general-page__text_main, .types, .places, .lich, .tim, .text-pr, .tm, .text-about, .text-names, .text-dates, .lower__info-use_text-rows_text-link {
   font-family: 'OpenSans-Regular';
   font-size: 16px;
   color: #000;
@@ -469,6 +469,19 @@ html, body {
   text-align: center; }
 
 /* ------ media query ------ */
+/* ------------ footer --------------- */
+.footer {
+  background-color: #000; }
+
+.lower__info-use {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .lower__info-use_logo-icon {
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #FFFFFF; }
+
 /* ------ media query ------ */
 /* -------- fonts -------- */
 /* -------- colors -------- */

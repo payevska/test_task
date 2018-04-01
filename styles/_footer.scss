@@ -1,7 +1,41 @@
-
+/* ------------ footer --------------- */
 .footer{
-  
+  background-color: $black;
 } 
+
+.lower {
+    &__info-use {
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+        &_logo-icon{
+           padding-right: 5px;
+           padding-left: 5px;
+            color: $white;
+        }
+        &_text-rows {
+        	&_text-link {
+                @extend %for-p;       
+            }        
+            &_text-more {            	
+            	
+        	    &_specials {
+
+        	    }
+        	    &_webs {
+
+        	    }
+        	}    
+        } 
+    }
+}    
+
+
+.icon-quotes {
+
+}  
+    
+ 
 
 /* ------ media query ------ */
 @include laptop {
