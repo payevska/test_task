@@ -75,11 +75,11 @@ html, body {
 }
 
 %for-h3 {
-	font:{
-     family: 'NexaBold';
-	   size: 30px;	
-	   weight: $bold;
-    }
+	font: {
+    family: 'NexaBold';
+	  size: 30px;	
+	  weight: $bold;
+  }
     line-height: 33px;
     margin-bottom: 0;
     margin-top: 0;
@@ -88,12 +88,12 @@ html, body {
 
 %for-buttons {
 	font:{
-        family: 'NexaBold';
-	    size: 13px;
+    family: 'NexaBold';
+	  size: 13px;
 	}
   text-transform: uppercase;
   color: $white;
-  padding: 12px 30px;
+  padding: 12px 18px;
   background-color: $blue-clear;
   border-radius: 19px;
   margin-bottom: 0;

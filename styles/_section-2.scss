@@ -21,13 +21,13 @@
       padding-left: 12px;
       &_second {
         overflow: hidden;
-        height: 180px;
-        
+        height: 180px;        
       }  
       &_ic {
         position: absolute;
         z-index: 2;
         top: 150px;
+        padding-left: 106px;
       }
       &_titles {
         background-color: $white;

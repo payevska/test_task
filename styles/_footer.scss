@@ -7,7 +7,9 @@
     &__info-use {
         display: flex;
         justify-content: center;
-        align-items: center;      
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;      
         &_logo-icon{
            padding-right: 5px;
            padding-left: 5px;
@@ -17,36 +19,55 @@
         	&_text-link {
                 @extend %for-p;
                 @extend %for-a;
-                       
+                display: flex;
+    			justify-content: space-between;
+    			padding-bottom: 10px;       
             }
             &_lines {
             	border-bottom: 1px solid $grey-dark;
             }        
             &_text-more {            	
-            	
+            	display: flex;
+			    padding-top: 10px;
         	    &_specials {
-        	    	@extend %for-a;
-					@extend %for-p;
-					color: $grey-clear;
-					
-					font-family: 'OpenSans-Light';
-					font-size: 13px;
-					
+        	    	display: flex;
+    				justify-content: space-between;    
+   					padding-left: 0;
+        	    	@extend %for-p;
+        	    	font: {
+        	    	    family: 'OpenSans-Regular';
+					    size: 12px;
+					    weight: $semi-bold;
+					}       	    	
         	    }
         	    &_webs {
-
-
+				    padding-right: 0;
+    				display: flex;
+    				justify-content: space-between;
         	    }
         	}    
         } 
     }
 }    
 
+.base-info {
+	font: {
+    family: 'NexaLight';
+	size: 12px;
+	weight: $semi-bold;
+	}
+    text-transform: uppercase;
+}
 
 .icon-quotes {
-
+	color: $blue-clear;
 }  
-    
+
+.text-other {
+    @extend %for-a;
+	color: $grey-clear;
+}
+
 .web-icon {
 	@extend %for-a;
 	color: $grey-clear;

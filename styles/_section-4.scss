@@ -22,17 +22,16 @@
 	&_st {
 		position: relative;
 	    border-bottom: 2px solid $grey-light;
-	    padding-top: 48px;	
-	    line-height: 4px;
-	}    
-	&_point {
-		position: absolute;
-        z-index: 3;    
-        width: 5px;
-        height: 5px;
+	    margin-top: 48px;	    
+	&_point {		    
+        width: 9px;
+        height: 9px;
         border-radius: 50%;
-        bottom: -3px;
+        position: absolute;
+        z-index: 3;
+        top: -4px;        
 	    background-color: $blue-clear;	   
+    }
     }
 }
 

@@ -54,28 +54,27 @@
 
 .buttons {
   @extend %for-buttons;
+  display: flex;  
   &__menu-btn {    
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     @extend %for-a;  
     color: $white;
-    
-    &_menu-icons {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-      background-color: $red-coral;
-      border-radius: 50%;
-      position: absolute;
-      width: 19px;
-      height: 19px;
-      font: {
-        family: 'NexaBold';
-        size: 13px;
-      }
-
-    }
+    margin-right: 4px;
+  }  
+  &__menu-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: $red-coral;
+    border-radius: 50%;      
+    width: 19px;
+    height: 19px;
+    font: {
+      family: 'NexaBold';
+      size: 13px;
+    }    
   }
 }
 
