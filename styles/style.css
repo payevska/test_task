@@ -82,7 +82,7 @@ html, body {
   color: #FFFFFF;
   text-decoration: none; }
 
-.general-page__text_main, .types, .places, .lich, .tim, .text-pr, .tm, .text-about {
+.general-page__text_main, .types, .places, .lich, .tim, .text-pr, .tm, .text-about, .text-names, .text-dates {
   font-family: 'OpenSans-Regular';
   font-size: 16px;
   color: #000;
@@ -369,7 +369,7 @@ html, body {
     .carousel__boks_comment_info {
       display: flex;
       justify-content: space-around;
-      padding-bottom: 100px; }
+      padding-bottom: 80px; }
 
 .performance {
   width: 26%; }
@@ -378,34 +378,39 @@ html, body {
   font-family: 'OpenSans-Light';
   font-size: 18px;
   color: #FFFFFF;
+  line-height: 24px;
   text-align: center;
   padding-left: 6px;
   padding-right: 6px;
   padding-bottom: 25px; }
 
-.toggle-left__up-line {
-  width: 45px;
-  height: 3px;
-  background-color: #FFFFFF;
-  transform: rotate(130deg); }
-.toggle-left__down-line {
-  width: 45px;
-  height: 3px;
-  margin-top: 29px;
-  background-color: #FFFFFF;
-  transform: rotate(-130deg); }
+.toggle-left {
+  padding-top: 120px; }
+  .toggle-left__up-line {
+    width: 36px;
+    height: 3px;
+    background-color: #FFFFFF;
+    transform: rotate(135deg); }
+  .toggle-left__down-line {
+    width: 36px;
+    height: 3px;
+    margin-top: 21px;
+    background-color: #FFFFFF;
+    transform: rotate(-135deg); }
 
-.toggle-right__up-line {
-  width: 45px;
-  height: 3px;
-  background-color: #FFFFFF;
-  transform: rotate(50deg); }
-.toggle-right__down-line {
-  width: 45px;
-  height: 3px;
-  margin-top: 29px;
-  background-color: #FFFFFF;
-  transform: rotate(-50deg); }
+.toggle-right {
+  padding-top: 120px; }
+  .toggle-right__up-line {
+    width: 36px;
+    height: 3px;
+    background-color: #FFFFFF;
+    transform: rotate(45deg); }
+  .toggle-right__down-line {
+    width: 36px;
+    height: 3px;
+    margin-top: 21px;
+    background-color: #FFFFFF;
+    transform: rotate(-45deg); }
 
 .band {
   width: 270px;
@@ -453,9 +458,14 @@ html, body {
 
 .text-names {
   text-align: center;
-  padding-top: 10px; }
+  padding-top: 10px;
+  font-size: 16px;
+  color: #FFFFFF; }
 
 .text-dates {
+  font-family: 'OpenSans-Light';
+  font-size: 14px;
+  color: #FFFFFF;
   text-align: center; }
 
 /* ------ media query ------ */
