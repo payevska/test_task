@@ -15,14 +15,26 @@
         }
         &_text-rows {
         	&_text-link {
-                @extend %for-p;       
+                @extend %for-p;
+                @extend %for-a;
+                       
+            }
+            &_lines {
+            	border-bottom: 1px solid $grey-dark;
             }        
             &_text-more {            	
             	
         	    &_specials {
-
+        	    	@extend %for-a;
+					@extend %for-p;
+					color: $grey-clear;
+					
+					font-family: 'OpenSans-Light';
+					font-size: 13px;
+					
         	    }
         	    &_webs {
+
 
         	    }
         	}    
@@ -35,7 +47,10 @@
 
 }  
     
- 
+.web-icon {
+	@extend %for-a;
+	color: $grey-clear;
+} 
 
 /* ------ media query ------ */
 @include laptop {

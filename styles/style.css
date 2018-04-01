@@ -75,14 +75,14 @@ html, body {
   content: "";
   clear: both; }
 
-.nav__menu_menu-li a, .buttons__menu-btn a, .general-page__text_btns a, .clicks a {
+.nav__menu_menu-li a, .buttons__menu-btn a, .general-page__text_btns a, .clicks a, .lower__info-use_text-rows_text-link a, .lower__info-use_text-rows_text-more_specials a, .web-icon a {
   color: #FFFFFF;
   text-decoration: none; }
-.nav__menu_menu-li a:hover, .buttons__menu-btn a:hover, .general-page__text_btns a:hover, .clicks a:hover {
+.nav__menu_menu-li a:hover, .buttons__menu-btn a:hover, .general-page__text_btns a:hover, .clicks a:hover, .lower__info-use_text-rows_text-link a:hover, .lower__info-use_text-rows_text-more_specials a:hover, .web-icon a:hover {
   color: #FFFFFF;
   text-decoration: none; }
 
-.general-page__text_main, .types, .places, .lich, .tim, .text-pr, .tm, .text-about, .text-names, .text-dates, .lower__info-use_text-rows_text-link {
+.general-page__text_main, .types, .places, .lich, .tim, .text-pr, .tm, .text-about, .text-names, .text-dates, .lower__info-use_text-rows_text-link, .lower__info-use_text-rows_text-more_specials {
   font-family: 'OpenSans-Regular';
   font-size: 16px;
   color: #000;
@@ -481,6 +481,15 @@ html, body {
     padding-right: 5px;
     padding-left: 5px;
     color: #FFFFFF; }
+  .lower__info-use_text-rows_lines {
+    border-bottom: 1px solid #4c4c4c; }
+  .lower__info-use_text-rows_text-more_specials {
+    color: #909393;
+    font-family: 'OpenSans-Light';
+    font-size: 13px; }
+
+.web-icon {
+  color: #909393; }
 
 /* ------ media query ------ */
 /* -------- fonts -------- */
