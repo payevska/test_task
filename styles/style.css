@@ -368,13 +368,27 @@ html, body {
     color: #FFFFFF; }
   .carousel__boks_comment {
     display: flex; }
-    .carousel__boks_comment_info {
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 80px; }
 
 .performance {
-  width: 26%; }
+  width: 25%; }
+
+/* ---- slider ---- */
+.img {
+  display: none;
+  padding-bottom: 80px; }
+
+.img.curry {
+  display: flex;
+  justify-content: space-around; }
+
+.img:first-child {
+  width: 100%; }
+
+.img:nth-child(2) {
+  width: 100%; }
+
+.img:nth-child(3) {
+  width: 100%; }
 
 .text-about {
   font-family: 'OpenSans-Light';

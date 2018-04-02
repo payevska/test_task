@@ -14,19 +14,41 @@
 		    color: $white;
 	    }
 	    &_comment {
-		    display: flex;		    
-		    &_info {		    	
-		    	display: flex;
-                justify-content: space-around;
-                    padding-bottom: 80px;
-		    }
+		    display: flex;	    
 	    }
 	}    
 }
 
 .performance {
-    width: 26%;
+	width: 25%;
 }
+
+/* ---- slider ---- */
+.testimonials {
+	
+}
+
+.img {	
+	display: none;	
+    padding-bottom: 80px;    
+}
+
+.img.curry{
+	display: flex;
+	justify-content: space-around;
+}
+.img:first-child {
+    width: 100%;
+}
+.img:nth-child(2) {
+    width: 100%;    
+}
+.img:nth-child(3) {
+    width: 100%;    
+}
+
+
+
 
 
 
@@ -151,6 +173,8 @@
 	color: $white;
     text-align: center;
 }
+
+
 
 /* ------ media query ------ */
 @include laptop {
