@@ -56,14 +56,39 @@
 <div class="section-1">              
     <div class="container general-page">
         <div class="row">
-        <div class="col-md general-page__text d-flex flex-column justify-content-center text-center">
+            <div class="col-md general-page__text d-flex flex-column justify-content-center text-center">
                 <h1 class="general-page__text_topic">Lorem ipsum dolor</h1>
                 <p class="general-page__text_main flex-column align-items-center">
                         Find and book conference rooms, workspace and pop-up offices
                 </p>
-                <form class="forms" action="" method="get" role="form">
+            </div>        
+                <!-- <form class="forms" action="" method="get" role="form">
                     <img src="img/input.png" alt="" class="forms__foto">
-                </form>
+                </form> -->
+            <div class="row">
+                <div class="col-md inputs-group">
+                    <div class="col-sm-9 inputs-left">
+                        <input type="text" class="fname" name="fname" aria-label="" placeholder="Another input">
+                    </div>
+                    <div class="col-sm-3 inputs-right">                    
+                        <input type="date" class="form-control" name="calendar"> 
+                    </div> 
+                </div>
+            </div>
+
+
+            <form>
+  <input class="col-sm-2 searchs" type="text" name="search" placeholder="Search..">
+</form>
+
+<form action="http://maps.google.com/maps" method="get" target="_blank">
+   <label for="saddr">Enter your location</label>
+   <input type="text" name="saddr" />
+   <input type="hidden" name="daddr" value="350 5th Ave New York, NY 10018 (Empire State Building)" />
+   <input type="submit" value="Get directions" />
+</form>
+
+            <div class="col-md general-page__text d-flex flex-column justify-content-center text-center">
                 <p class="general-page__text_main flex-column align-items-center">For bigger quotes 
                     <a href="#" class="clicks">contact us</a>
                 </p>
